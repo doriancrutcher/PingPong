@@ -1,0 +1,125 @@
+
+
+#gradient{
+    z-index: -1;
+    position: fixed;
+    top:0;
+    bottom:0;
+    width: 100vw;
+    height:100vh;
+    color:#fff;
+    background: linear-gradient(45deg,#E83423,#35F2EE,#35F250);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+    
+}
+.check {
+    margin: 20px;
+    background-color: black;
+}
+
+.gamebox {
+ background-color: rgba(0,0,0,0.7);
+margin: 10%;
+border-radius: 10%;
+}
+
+.score {
+    color: white;
+    font-size:50px;
+    margin-top:10%;
+    
+   
+    
+}
+
+#score-list li  {
+
+    float:left;
+    list-style: none;
+    padding: 10%;
+    
+    
+    
+    
+}
+
+#score-list{
+    margin-left:50%;
+    transform: translateX(-50%)
+   
+}
+
+#p1-score {
+  text-align: center;
+}
+
+#p2-score {
+    text-align: center;
+}
+
+#SnakeBox {
+    margin-left: 50%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    position: relative;
+    transform: translateX(-50%);
+    top:auto;
+    width:800px;
+    
+}
+
+.scores {
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+
+.Buttons {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-content: center;
+}
+
+.buttonStyle {
+    margin-left: 50%;
+    margin-bottom:30%;
+    margin-top:20%;
+    color:white;
+    background-color: rgba(0,0,0,1);
+    text-align: center;
+    font-size: 200%;
+    border-radius:20px;
+    padding: 30px;
+    transition:.5s;
+    
+}
+
+.buttonStyle:hover{
+    background-color: red;
+}
+
+#diffSelect {
+  margin-left: 50%;
+    margin-bottom:30%;
+    margin-top:20%;
+    color:white;
+    background-color: rgba(0,0,0,1);
+    text-align: center;
+    font-size: 200%;
+    border-radius:20px;
+    padding: 30px;
+    transition:.5s;
+    border-color:none;
+}
