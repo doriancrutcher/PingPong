@@ -27,7 +27,7 @@ var Setup=(function(){
        AngleS:0,
        AngleEnd:2*Math.PI,
        Color:'white',
-       Speed:10,
+       Speed:4,
        SpeedX:6,
        verticalD:this.speed,
        AngCos:360-this.AngSin,
@@ -135,11 +135,11 @@ window.addEventListener('keydown',function(e){
     switch(e.keyCode){
         case 87:
            
-           if (UserControls.PlayerMotion().P1Y>10) {UserControls.PlayerMotion().P1Y-=0.1;}
+           if (UserControls.PlayerMotion().P1Y>10) {UserControls.PlayerMotion().P1Y-=1;}
             
             break;  
         case 83:
-                      if (UserControls.PlayerMotion().P1Y<canv.height-60) {UserControls.PlayerMotion().P1Y+=0.1;}
+                      if (UserControls.PlayerMotion().P1Y<canv.height-60) {UserControls.PlayerMotion().P1Y+=1;}
             break;
     }
 })
