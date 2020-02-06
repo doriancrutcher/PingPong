@@ -27,7 +27,7 @@ var Setup=(function(){
        AngleS:0,
        AngleEnd:2*Math.PI,
        Color:'white',
-       Speed:4,
+       Speed:10,
        SpeedX:6,
        verticalD:this.speed,
        AngCos:360-this.AngSin,
