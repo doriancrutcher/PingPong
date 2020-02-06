@@ -135,11 +135,11 @@ window.addEventListener('keydown',function(e){
     switch(e.keyCode){
         case 87:
            
-           if (UserControls.PlayerMotion().P1Y>10) {UserControls.PlayerMotion().P1Y-=1;}
+           if (UserControls.PlayerMotion().P1Y>10) {UserControls.PlayerMotion().P1Y-=2;}
             
             break;  
         case 83:
-                      if (UserControls.PlayerMotion().P1Y<canv.height-60) {UserControls.PlayerMotion().P1Y+=1;}
+                      if (UserControls.PlayerMotion().P1Y<canv.height-60) {UserControls.PlayerMotion().P1Y+=2;}
             break;
     }
 })
