@@ -131,7 +131,18 @@ var UserControls=(function(SU){
 var DomStrings=Setup.getDOMStrings();
 var canv=document.querySelector(DomStrings.canv);
 var ctx=canv.getContext('2d');
-
+window.addEventListener('keydown',function(e){
+    switch(e.keyCode){
+        case 87:
+           
+           if (UserControls.PlayerMotion().P1Y>10) {UserControls.PlayerMotion().P1Y-=0.1;}
+            
+            break;  
+        case 83:
+                      if (UserControls.PlayerMotion().P1Y<canv.height-60) {UserControls.PlayerMotion().P1Y+=0.1;}
+            break;
+    }
+})
 var GameMode=function(){
 var P1Y, P2Y;
     P1Y=UserControls.PlayerMotion().P1Y;
@@ -164,18 +175,7 @@ ctx.stroke();
 
 
     
-window.addEventListener('keydown',function(e){
-    switch(e.keyCode){
-        case 87:
-           
-           if (UserControls.PlayerMotion().P1Y>10) {UserControls.PlayerMotion().P1Y-=0.1;}
-            
-            break;  
-        case 83:
-                      if (UserControls.PlayerMotion().P1Y<canv.height-60) {UserControls.PlayerMotion().P1Y+=0.1;}
-            break;
-    }
-})
+
 }
 
 function init(){
